@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.fixed-width{
+    max-width: 1250px;
+    margin: auto;
+}
+
+/*Main css start*/
+
+/*Header start*/
+.header{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+.header a{
+    color: #010101;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo a img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.header span{
+    display: inline-block;
+    margin-top: 17px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.header span:hover{
+    color: rgba(0, 0, 0, 0.4);
+    transition: .3s;
+}
+
+.header-menu{
+    width: 50%;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 17px;
+    line-height: 60px;
+}
+.header-menu ul li:hover > a{
+    color:#6278df ;
+    transition: .4s;
+}
+
+/*Dropdown menu*/
+
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 2;
+}
+.header-menu ul li .d-menu1 a{
+    border-bottom: 1px solid #ddd;
+    width: 170px;
+}
+.header-menu ul li .d-menu2 a{
+    border-bottom: 1px solid #ddd;
+    width: 220px;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+    transform: scaleY(1);
+}
+
+.header-button{
+width: 20%;
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid;
+    margin-top: 8px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 7px;
+    color:#6278df !important ;
+    font-weight: 700;
+}
+.button:hover{
+    background-color:#6278df ;
+    color: white !important;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+    border: 2px solid #6278df;
+}
+
+/*Header end*/
+
+/*Banner start*/
+
+.banner{
+   background: url(https://i.ibb.co/QJdcFnv/mbr-4.jpg) no-repeat center;
+   padding: 200px 0;
+   background-size: cover;
+   color: white;
+   position: relative;
+   z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.banner-content h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.banner-content h2{
+    font-size: 55px;
+    margin: 40px 0;
+}
+.default-button{
+    display: inline-block;
+    padding: 20px 30px;
+    color: #7d7d7d;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.default-button i{
+    margin-right: 10px;
+}
+.default-button:hover{
+    background-color: #6278df;
+    color: white;
+    transition: .4s;
+}
+
+.banner-bottom{
+    padding: 100px 0;
+    background-color: #f7f9ff;
+}
+.video{
+    width: 48%;
+}
+.video-content{
+    width: 48%;
+}
+.video-content h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.video-content p{
+    color: #767676;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*Banner end*/
+
+/*Service section start*/
+
+.Service-title{
+    padding: 80px 0;
+}
+.Service-title h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.Service-title h4{
+    font-size: 25px;
+    font-weight: 300;
+    color: #767676;
+}
+.service-box{
+    width: 32%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; 
+    padding: 25px;
+    box-sizing: border-box;
+}
+.service-box:nth-child(3n+3) {
+    margin-right: 0;
+}
+.service-icon span{
+    margin-right: 30px;
+    margin-bottom: 130px;
+    float: left;
+    font-size: 40px;
+    color: #6278df;
+}
+.box-text h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.box-text p{
+    margin: 30px 0;
+    font-size: 23px;
+    color:#767676 ;
+    font-weight: 300;
+}
+
+/*Service section end*/
